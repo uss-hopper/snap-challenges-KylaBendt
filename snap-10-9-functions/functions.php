@@ -7,7 +7,12 @@
 </head>
 
 <body>
+<a href="../index.php">All Snap Challenges</a>
+<h1>October 9 Snap Challenge</h1>
+<p>Goal: Create two Javascript functions.  The first one should perform a mathematical operation on two numbers.
+The second one should concatenate two strings.</p>
 <div>
+	<h2>Javascript results</h2>
 	<p id="display"></p>
 
 </div>
