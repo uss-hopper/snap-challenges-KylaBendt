@@ -6,7 +6,8 @@
 </head>
 
 <body>
-<a href="snap-10-9-functions\index.php">October 9th: Create two functions in javascript</a>
+<h1>Kyla's Snap Challenges</h1>
+<a href="snap-10-9-functions/functions.php">October 9th: Create two functions in javascript</a>
 
 </body>
 
