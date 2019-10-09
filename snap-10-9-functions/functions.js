@@ -1,13 +1,23 @@
-let numberOne = 1;
-let numberTwo = 2;
-let numberThree = multiplyTwoNumbers(numberOne, numberTwo);
-console.log("New Number: " + numberThree);
+window.onload = function() {
+	console.log("js started");
+	displayFunctionResults();
+}
 
-let stringOne = "Good";
-let stringTwo = "Morning";
-let stringThree = smushStrings(stringOne, stringTwo);
-console.log("New String: " + stringThree);
+function displayFunctionResults() {
 
+	let numberOne = 1;
+	let numberTwo = 2;
+	let numberThree = multiplyTwoNumbers(numberOne, numberTwo);
+	console.log("New Number: " + numberThree);
+
+	let stringOne = "Good";
+	let stringTwo = "Morning";
+	let stringThree = smushStrings(stringOne, stringTwo);
+	console.log("New String: " + stringThree);
+
+	let display = document.getElementById("display");
+	display.textContent = "New Number: " + numberThree + " New String: " + stringThree;
+}
 
 /*
 * Returns the product of two numbers

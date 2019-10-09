@@ -7,7 +7,10 @@
 </head>
 
 <body>
+<div>
+	<p id="display"></p>
 
+</div>
 
 </body>
 
