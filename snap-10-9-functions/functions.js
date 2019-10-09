@@ -12,8 +12,8 @@ console.log("New String: " + stringThree);
 /*
 * Returns the product of two numbers
 *
-* @Param $num1 first number to be multiplied
-* @Param $num1 second number to be multiplied
+* @param $num1 first number to be multiplied
+* @param $num1 second number to be multiplied
 * @return $product value of num1 * num2
 * */
 function multiplyTwoNumbers(num1, num2) {
@@ -25,8 +25,8 @@ function multiplyTwoNumbers(num1, num2) {
 /*
 * Concatenates two strings
 *
-* @Param $str1 first string to be concatenated
-* @Param $str1 second string to be concatenated
+* @param $str1 first string to be concatenated
+* @param $str1 second string to be concatenated
 * @return $product str1 and str2 concatenated
 * */
 function smushStrings(str1, str2) {
