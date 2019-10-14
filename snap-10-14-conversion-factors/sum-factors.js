@@ -1,6 +1,16 @@
 /*This code is designed to take a positive integer, find all positive factors and sum them. */
+window.onload = function() {
+
+};
 
 //TODO: Get number from html
+function initInput() {
+	let form = document.getElementById("input-number-form");
+	form.addEventListener("submit", (event)=> {
+		handleNumberForm(event, form);
+	});
+}
+
 
 //TODO: Check input to make sure it is a positive integer
 //TODO: If it a positive integer, proceed w/ function
