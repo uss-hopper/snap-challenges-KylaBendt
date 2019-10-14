@@ -20,7 +20,7 @@ function handleNumberForm(event, formRef) {
 	formRef.reset();
 }
 
-//TODO: Check input to make sure it is a positive integer
+//TODO: Check input to make sure it is an integer
 //TODO: If it is not a positive integer, give error
 
 function displayFactorSum(){
@@ -31,9 +31,10 @@ function displayFactorSum(){
 }
 
 
-/* This function sums all of the factors of a number*/
+/* This function sums all of the positive factors of a number*/
 function sumFactors(number) {
 	let sum = 0;
+	number = Math.abs(number);
 	for(let i=1;i <= number;i++) {
 		if((number % i) === 0) {
 			sum = sum + i;
