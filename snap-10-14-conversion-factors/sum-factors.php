@@ -6,8 +6,16 @@
 	<script src="./sum-factors.js"></script>
 </head>
 <h1>Find the sum of all factors of a number</h1>
-<!--An input number thing will go here-->
-<!--A place to output the answer will go here-->
+<div>
+	<form id="input-number-form">
+		<div>
+			<label for="number">Input a number</label>
+			<input type="number" id="input-number" name="input-number">
+		</div>
+	</form>
+</div>
+<div class="display-answer-container">
+	<p id="display-answer"></p>
 
-
+</div>
 </html>
