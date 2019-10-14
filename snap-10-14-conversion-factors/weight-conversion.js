@@ -1,4 +1,8 @@
+//TODO: onload
 
+//TODO: event listener on for submit button
+
+//TODO: get weight & units, call conversion, display grams
 
 
 

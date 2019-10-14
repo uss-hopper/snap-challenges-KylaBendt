@@ -34,7 +34,7 @@ function displayFactorSum(){
 /*
 * This function sums all of the unique positive factors of a number
 *
-* @param number integer that will have positive factors summed
+* @param int number The integer that will have positive factors summed
 * @return sum of unique positive factors of number
 * */
 function sumFactors(number) {
