@@ -31,7 +31,12 @@ function displayFactorSum(){
 }
 
 
-/* This function sums all of the positive factors of a number*/
+/*
+* This function sums all of the unique positive factors of a number
+*
+* @param number integer that will have positive factors summed
+* @return sum of unique positive factors of number
+* */
 function sumFactors(number) {
 	let sum = 0;
 	number = Math.abs(number);
