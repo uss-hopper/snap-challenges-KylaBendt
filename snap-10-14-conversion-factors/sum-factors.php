@@ -6,6 +6,8 @@
 	<script src="./sum-factors.js"></script>
 </head>
 <body>
+<a href="../index.php">Snap Challenge Home</a>
+<a href="./index.php">October 14th Index</a>
 <h1>Find the sum of all factors of a number</h1>
 <div>
 	<form id="input-number-form">
