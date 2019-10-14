@@ -7,8 +7,8 @@
 
 <body>
 <h1>October 14th Challenges</h1>
-<a href="../snap-10-14-conversion-factors/weight-conversion.php">Weight Conversion</a>
-<a href="../snap-10-14-conversion-factors/sum-factors.php">Sum factors of a number</a>
+<p><a href="../snap-10-14-conversion-factors/weight-conversion.php">Weight Conversion</a></p>
+<p><a href="../snap-10-14-conversion-factors/sum-factors.php">Sum factors of a number</a></p>
 
 
 </body>

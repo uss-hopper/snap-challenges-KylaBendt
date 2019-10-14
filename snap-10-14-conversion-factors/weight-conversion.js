@@ -23,7 +23,7 @@ function displayConversion(){
 	let inputUnits = document.getElementById("units");
 	let displayAnswer = document.getElementById("display-answer");
 	let convertedGrams = convertWeight(inputWeight.value, inputUnits.value);
-	displayAnswer.textContent = inputWeight.value + inputUnits.value + " is equal to " + convertedGrams + " g";
+	displayAnswer.textContent = inputWeight.value + " " + inputUnits.value + " is equal to " + convertedGrams + " g";
 }
 
 /*
