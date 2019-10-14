@@ -14,8 +14,7 @@
 		<div>
 			<label for="number">Weight</label>
 			<input type="number" id="input-weight" name="input-weight">
-			<label for="select"></label>
-			<select id="unit" name="unit">
+			<select id="units" name="units">
 				<option value="lbs">Pounds</option>
 				<option value="oz">Ounces</option>
 				<option value="kg">Kilograms</option>
