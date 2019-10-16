@@ -3,6 +3,5 @@
 
 SELECT tweet.tweetContent profile.profileAtHandle FROM 'like'
 INNER JOIN tweet ON tweet.tweetId = like.likeTweetId
-INNER JOIN profile.profileId = like.likeProfileId
-WHERE tweet.tweetId = unhex(0536faef082b454e9d444cdbe7887d7a);
-
+INNER JOIN profile ON profile.profileId = like.likeProfileId
+WHERE tweet.tweetId = unhex('0536faef082b454e9d444cdbe7887d7a');
