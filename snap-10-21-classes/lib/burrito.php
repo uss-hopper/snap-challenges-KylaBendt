@@ -2,7 +2,7 @@
 require_once("../Classes/Burrito.php");
 use KylaBendt\SnapChallengesKylaBendt\Burrito;
 
-$myBurrito = new Burrito('green', 'bacon');
+$myBurrito = new Burrito('red', 'bacon');
 
 echo("My burrito has ");
 echo($myBurrito->getBurritoChileColor());

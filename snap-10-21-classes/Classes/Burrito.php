@@ -69,7 +69,8 @@ public function setBurritoChileColor($newBurritoChileColor): void {
 	}
 
 	//Check if chile type is 'red' or 'green'
-	if($newBurritoChileColor != 'red' | $newBurritoChileColor != 'green') {
+	//if($newBurritoChileColor != 'red' | $newBurritoChileColor != 'green') {
+	if($newBurritoChileColor != ('green' || 'red')) {
 		throw(new \InvalidArgumentException("chile type must be 'red' or 'green'"));
 	}
 
@@ -97,7 +98,7 @@ public function getBurritoMeatType(): string {
  * @throws \TypeError if $newBurritoMeatType is not a string
  */
 
-public function setMeatType($newBurritoMeatType): void {
+public function setBurritoMeatType($newBurritoMeatType): void {
 	//Sanitize the input
 	$newBurritoMeatType = trim($newBurritoMeatType);
 	$newBurritoMeatType = filter_var($newBurritoMeatType, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
@@ -111,7 +112,7 @@ public function setMeatType($newBurritoMeatType): void {
 }
 
 public static function eatBurrito() : void {
-	echo("Your burrito is gone!");
+	echo("Oh no!  My burrito is gone!");
 }
 
 }
