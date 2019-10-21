@@ -8,3 +8,5 @@ echo("My burrito has ");
 echo($myBurrito->getBurritoChileColor());
 echo(" chile and ");
 echo($myBurrito->getBurritoMeatType());
+echo('!  ');
+Burrito::eatBurrito();
