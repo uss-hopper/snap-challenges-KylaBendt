@@ -4,9 +4,5 @@ use KylaBendt\SnapChallengesKylaBendt\Burrito;
 
 $myBurrito = new Burrito('red', 'bacon');
 
-echo("My burrito has ");
-echo($myBurrito->getBurritoChileColor());
-echo(" chile and ");
-echo($myBurrito->getBurritoMeatType());
-echo('!  ');
+echo"My burrito has ".$myBurrito->getBurritoChileColor()." chile and ".$myBurrito->getBurritoMeatType().'!  ';
 Burrito::eatBurrito();
