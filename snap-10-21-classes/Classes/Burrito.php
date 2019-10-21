@@ -10,109 +10,110 @@ namespace KylaBendt\SnapChallengesKylaBendt;
  * @author Kyla Bendt
  * @version 0.0.1
  */
+
 class Burrito {
 
 //Define state variables
-/**
- * chile color - red or green!
- * @var string $burritoChileColor
- */
+	/**
+	 * chile color - red or green!
+	 * @var string $burritoChileColor
+	 */
 	private string $burritoChileColor;
 
-/*
- * meatType
- * @var string $burritoMeatType
- */
-private string $burritoMeatType;
+	/*
+	 * meatType
+	 * @var string $burritoMeatType
+	 */
+	private string $burritoMeatType;
 
-/*
- * Constructor for this burrito
- *
- * @param string $newBurritoChileColor chile color of this burrito- must be 'red' or 'green'
- * @param string $newBurritoMeatType meat type of this burrito
- */
+	/*
+	 * Constructor for this burrito
+	 *
+	 * @param string $newBurritoChileColor chile color of this burrito- must be 'red' or 'green'
+	 * @param string $newBurritoMeatType meat type of this burrito
+	 */
 
-public function __construct(string $newBurritoChileColor, string $newBurritoMeatType) {
-	try {
-		$this->setBurritoChileColor($newBurritoChileColor);
-		$this->setBurritoMeatType($newBurritoMeatType);
-	} catch(\InvalidArgumentException | \RangeException | \Exception | \TypeError $exception) {
-		$exceptionType = get_class($exception);
-		throw(new $exceptionType($exception->getMessage(), 101, $exception));
-	}
-}
-
-/*
- * accessor for burritoChileColor
- *
- * @return string value of burritoChileColor
- */
-
-public function getBurritoChileColor(): string {
-	return ($this->burritoChileColor);
-}
-
-/*
- * mutator for burritoChileColor
- *
- * @param string 'red' or 'green' $newBurritoChileColor accepts
- * @throws \InvalidArgumentException if $newBurritoChileColor is not 'red' or 'green'
- * @throws \TypeError if $newBurritoChileColor is not a string
- */
-
-public function setBurritoChileColor($newBurritoChileColor): void {
-	//Sanitize the input
-	$newBurritoChileColor = trim($newBurritoChileColor);
-	$newBurritoChileColor = filter_var($newBurritoChileColor, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	if(empty($newBurritoChileColor) === true) {
-		throw(new \InvalidArgumentException("newBurritoChileColor is empty or insecure"));
+	public function __construct(string $newBurritoChileColor, string $newBurritoMeatType) {
+		try {
+			$this->setBurritoChileColor($newBurritoChileColor);
+			$this->setBurritoMeatType($newBurritoMeatType);
+		} catch(\InvalidArgumentException | \RangeException | \Exception | \TypeError $exception) {
+			$exceptionType = get_class($exception);
+			throw(new $exceptionType($exception->getMessage(), 101, $exception));
+		}
 	}
 
-	//Check if chile type is 'red' or 'green'
-	//if($newBurritoChileColor != 'red' | $newBurritoChileColor != 'green') {
-	if($newBurritoChileColor != ('green' || 'red')) {
-		throw(new \InvalidArgumentException("chile type must be 'red' or 'green'"));
+	/*
+	 * accessor for burritoChileColor
+	 *
+	 * @return string value of burritoChileColor
+	 */
+
+	public function getBurritoChileColor(): string {
+		return ($this->burritoChileColor);
 	}
 
-	//store the chile type
-	$this->burritoChileColor = $newBurritoChileColor;
-}
+	/*
+	 * mutator for burritoChileColor
+	 *
+	 * @param string 'red' or 'green' $newBurritoChileColor accepts
+	 * @throws \InvalidArgumentException if $newBurritoChileColor is not 'red' or 'green'
+	 * @throws \TypeError if $newBurritoChileColor is not a string
+	 */
 
+	public function setBurritoChileColor($newBurritoChileColor): void {
+		//Sanitize the input
+		$newBurritoChileColor = trim($newBurritoChileColor);
+		$newBurritoChileColor = filter_var($newBurritoChileColor, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newBurritoChileColor) === true) {
+			throw(new \InvalidArgumentException("newBurritoChileColor is empty or insecure"));
+		}
 
-/*
- * accessor for burritoMeatType
- *
- * @return string value of burritoMeatType
- */
+		//Check if chile type is 'red' or 'green'
+		//if($newBurritoChileColor != 'red' | $newBurritoChileColor != 'green') {
+		if($newBurritoChileColor != ('green' || 'red')) {
+			throw(new \InvalidArgumentException("chile type must be 'red' or 'green'"));
+		}
 
-public function getBurritoMeatType(): string {
-	return ($this->burritoMeatType);
-}
-
-
-/*
- * mutator for burritoMeatType
- *
- * @param string  $newBurritoMeatType
- * @throws \InvalidArgumentException if input is not secure
- * @throws \TypeError if $newBurritoMeatType is not a string
- */
-
-public function setBurritoMeatType($newBurritoMeatType): void {
-	//Sanitize the input
-	$newBurritoMeatType = trim($newBurritoMeatType);
-	$newBurritoMeatType = filter_var($newBurritoMeatType, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
-	if(empty($newBurritoMeatType) === true) {
-		throw(new \InvalidArgumentException("newBurritoMeatType is empty or insecure- no vegetarians allowed!!!"));
+		//store the chile type
+		$this->burritoChileColor = $newBurritoChileColor;
 	}
 
 
-	//store the meat type
-	$this->burritoMeatType = $newBurritoMeatType;
-}
+	/*
+	 * accessor for burritoMeatType
+	 *
+	 * @return string value of burritoMeatType
+	 */
 
-public static function eatBurrito() : void {
-	echo("Oh no!  My burrito is gone!");
-}
+	public function getBurritoMeatType(): string {
+		return ($this->burritoMeatType);
+	}
+
+
+	/*
+	 * mutator for burritoMeatType
+	 *
+	 * @param string  $newBurritoMeatType
+	 * @throws \InvalidArgumentException if input is not secure
+	 * @throws \TypeError if $newBurritoMeatType is not a string
+	 */
+
+	public function setBurritoMeatType($newBurritoMeatType): void {
+		//Sanitize the input
+		$newBurritoMeatType = trim($newBurritoMeatType);
+		$newBurritoMeatType = filter_var($newBurritoMeatType, FILTER_SANITIZE_STRING, FILTER_FLAG_NO_ENCODE_QUOTES);
+		if(empty($newBurritoMeatType) === true) {
+			throw(new \InvalidArgumentException("newBurritoMeatType is empty or insecure- no vegetarians allowed!!!"));
+		}
+
+
+		//store the meat type
+		$this->burritoMeatType = $newBurritoMeatType;
+	}
+
+	public static function eatBurrito(): void {
+		echo("Oh no!  My burrito is gone!");
+	}
 
 }
