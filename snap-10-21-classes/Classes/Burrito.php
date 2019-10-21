@@ -15,15 +15,15 @@ class Burrito {
 //Define state variables
 /**
  * chile color - red or green!
- * @var string $chileColor
+ * @var string $burritoChileColor
  */
-private $burritoChileColor;
+	private string $burritoChileColor;
 
 /*
  * meatType
- * @var string $meatType
+ * @var string $burritoMeatType
  */
-private $burritoMeatType;
+private string $burritoMeatType;
 
 /*
  * Constructor for this burrito
@@ -32,7 +32,7 @@ private $burritoMeatType;
  * @param string $newBurritoMeatType meat type of this burrito
  */
 
-public function __construct($newBurritoChileColor, $newBurritoMeatType) {
+public function __construct(string $newBurritoChileColor, string $newBurritoMeatType) {
 	try {
 		$this->setBurritoChileColor($newBurritoChileColor);
 		$this->setBurritoMeatType($newBurritoMeatType);
