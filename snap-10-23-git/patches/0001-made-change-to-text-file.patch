@@ -1,0 +1,19 @@
+From dff30a9eec0809d50345ee78dc4ab670e12b08f2 Mon Sep 17 00:00:00 2001
+From: Kyla Bendt <kylabendt@gmail.com>
+Date: Wed, 23 Oct 2019 08:38:01 -0600
+Subject: [PATCH 1/2] made change to text file
+
+---
+ snap-10-23-git/text.txt | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/snap-10-23-git/text.txt b/snap-10-23-git/text.txt
+index e69de29..936064a 100644
+--- a/snap-10-23-git/text.txt
++++ b/snap-10-23-git/text.txt
+@@ -0,0 +1 @@
++I"m getting the hang of this git stuff.
+\ No newline at end of file
+-- 
+2.23.0.windows.1
+

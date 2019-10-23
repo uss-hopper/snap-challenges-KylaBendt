@@ -1,0 +1,23 @@
+From 2bfa32f67491f34473221fd1a392119e34922f37 Mon Sep 17 00:00:00 2001
+From: Kyla Bendt <kylabendt@gmail.com>
+Date: Wed, 23 Oct 2019 08:40:36 -0600
+Subject: [PATCH 2/2] made some more changes that I don't want in my patch
+
+---
+ snap-10-23-git/text.txt | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+
+diff --git a/snap-10-23-git/text.txt b/snap-10-23-git/text.txt
+index 936064a..60088b8 100644
+--- a/snap-10-23-git/text.txt
++++ b/snap-10-23-git/text.txt
+@@ -1 +1,3 @@
+-I"m getting the hang of this git stuff.
+\ No newline at end of file
++I"m getting the hang of this git stuff.
++
++Here's some other new stuff in this file.  This new stuff is a pretend experiment that I don't want to add to my other branch.  
+\ No newline at end of file
+-- 
+2.23.0.windows.1
+
