@@ -8,7 +8,7 @@
 <body>
 <h1>October 23 Snap Challenge - Kyla Bendt</h1>
 
-<h2>The five branch type in git flow</h2>
+<h2>The five branch types in git flow</h2>
 <h3>The master branch - production</h3>
 <p>The master branch is the official version of working code that is currently distributed or ready for immediate distribution.  It should be stable and well-tested.</p>
 
@@ -33,7 +33,6 @@
 	<li>After solving any merge problems, the feature branch is then merged into the dev branch. </li>
 	<li>When it is time for a new release, the dev branch will be merged into the release branch.</li>
 	<li>Once the release version has passed testing, it will be merged into master. </li>
-
 </ol>
 
 
