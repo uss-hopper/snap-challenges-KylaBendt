@@ -1,8 +1,12 @@
 ul.my-list {
-	padding: 0;
-	margin: 0;
-	list-style: none;
-}
+	 padding: 0;
+	 margin: 0;
+	 list-style: none;
+	 display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+ }
 
 li.my-item {
 	background: tomato;
