@@ -6,3 +6,10 @@ console.log(person.company);
 
 delete person.company;
 console.log(person.company);
+console.log(people);
+
+for (let i =0; i < people.length; ++i) {
+	delete people[i].company;
+}
+
+console.log(people);
