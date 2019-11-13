@@ -190,3 +190,10 @@ let people = [{
 		"bs": "target end-to-end models"
 	}
 }];
+
+let newPeople = people.map(function(person) {
+	delete person.company;
+	return person;
+});
+
+console.log(newPeople);
