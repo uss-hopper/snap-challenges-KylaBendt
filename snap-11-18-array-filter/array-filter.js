@@ -4,10 +4,10 @@ let text = "Ensign Babyface! Your shields were failing, sir. This should be inte
 
 
 let textArray = text.split(" ");
-console.log(textArray);
+
 let newArray = textArray.filter(function(word){
 	return !(word.startsWith('e') || word.startsWith('E'));
 })
-console.log(newArray)
-word = "echo";
-console.log(word.startsWith('e'));
+
+let newText = newArray.join(" ");
+console.log(newText);
