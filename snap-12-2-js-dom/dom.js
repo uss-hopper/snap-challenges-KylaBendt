@@ -3,5 +3,12 @@ window.onload = function() {
 }
 
 function mapArrayToDom() {
-	let displayDiv = document.getElementById("display")
+	let names = ['Bob', 'Jim', 'Matt', 'Mary', 'Suzy', ' Sarah'];
+	let displayDiv = document.getElementById("display");
+	names.map(function(name) {
+		let child = document.createElement("p");
+		child.textContent = name;
+		displayDiv.appendChild(child);
+		}
+	)
 }
