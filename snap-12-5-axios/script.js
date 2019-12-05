@@ -1,5 +1,5 @@
 function onPageLoad() {
-	axios.get('https://dog.ceo/api/breeds/list/all').then(result => {
+	axios.get('https://dog.ceo/api/breeds/list/all').then(({result}) => {
 		let breeds = result.data.message;
 		let breedDiv = document.getElementById("target");
 		breedDiv.textContent = "";
