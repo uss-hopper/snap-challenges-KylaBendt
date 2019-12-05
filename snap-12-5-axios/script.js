@@ -7,7 +7,9 @@ function onPageLoad() {
 		breedDiv.textContent = "";
 		// breedDiv.textContent = Object.keys(breeds);
 		for (let [key, value] of Object.entries(breeds)) {
-			breedDiv.append(`${key}: ${value}`);
+			let child = document.createElement("p");
+			child.textContent = `${key}: ${value}`;
+			breedDiv.appendChild(child);
 		}
 	});
 
